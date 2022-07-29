@@ -1,0 +1,26 @@
+.container-head {
+    background: #fff;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    padding: 0 30px;
+    margin-top: 25px;
+}
+
+.head-bg {
+    background-color: #004caa;
+}
+
+.list-item {
+    padding: 25px 0;
+    display: inline-block;
+    color: #006;
+    text-transform: capitalize;
+    padding-left: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.list-item:hover {
+    color: #fc5185;
+}
