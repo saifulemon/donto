@@ -1,0 +1,40 @@
+.footer-bg {
+    background-color: #004caa;
+}
+
+.single-footer-widget {
+    padding: 100px 0 90px;
+    text-align: start;
+}
+
+.widget-title {
+    margin-bottom: 30px;
+}
+
+.widget-title h2 {
+    line-height: 1;
+    font-size: 30px;
+    color: #fff!important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+.footer-link {
+    font-weight: 400;
+    display: block;
+    line-height: 34px;
+    color: #ddd!important;
+
+}
+
+.footer-link:hover {
+    color: #fc5185 !important; 
+}
+
+.footer-copy-right {
+    padding: 20px 0;
+    background-color: #1a60b6;
+}
+
+.developer {
+    color: #fc5185;
+}
