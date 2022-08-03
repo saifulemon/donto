@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
 .container-head {
     background: #fff;
     border-radius: 10px;
@@ -18,7 +20,8 @@
     padding-left: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
 }
 
 .list-item:hover {

@@ -1,12 +1,13 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import './Home.css'
+import Features from '../Features/Features';
 
 const Home = () => {
 
     return (
-        <div className="home-sec">
+        <div>
            <Banner />
+           <Features />
         </div>
     );
 };

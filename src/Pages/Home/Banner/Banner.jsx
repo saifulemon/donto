@@ -8,7 +8,6 @@ import heroTeeth from '../../../Images/hero-theeth.54c2c4e9.png';
 
 const Banner = () => {
     return (
-        <div>
             <section className="single-hero-slide text-white">
                 <Container>
                     <Row>
@@ -34,7 +33,6 @@ const Banner = () => {
                     </Row>
                 </Container>
             </section>
-        </div>
     );
 };
 
