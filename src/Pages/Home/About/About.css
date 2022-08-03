@@ -1,0 +1,92 @@
+.about-wrapper {
+    margin-bottom: 120px;
+}
+
+.about-left {
+    position: relative;
+}
+
+.animated {
+    position: absolute;
+    left: 35px;
+    position: absolute;
+    animation: movebounce 2.5s ease-in-out infinite;
+    animation-delay: 100ms;
+    animation-direction: alternate;
+    bottom: 0px;
+}
+
+.about-content h1 {
+    margin-bottom: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+}
+
+.about-content p {
+    color: #666;
+}
+
+.about-content a {
+    margin-top: 17px;
+    color: #fc5185;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding-bottom: 4px;
+    display: inline-block;
+    border-bottom: 2px solid #fc5185;
+    transition: all 0.4s ease 0s;
+}
+
+.about-content a:hover {
+    color: #0056b3;
+}
+
+.fun-fact-sec {
+    background-color: #ffffff;
+    box-shadow: #00000014 8.135px 18.271px 40px 0px;
+    margin-top: 50px;
+    position: relative;
+    height: 100%;
+    padding: 65px 80px 21px;
+    overflow: hidden;
+}
+
+.single-fun {
+    position: relative;
+    width: 50%;
+    margin-bottom: 45px;
+    float: left; 
+    text-align: start;
+}
+
+.sp-fun {
+    padding-left: 60px;
+}
+
+.single-fun span {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    position: relative;
+}
+
+.single-fun p {
+    color: #666;
+    font-weight: 300;
+    line-height: 1;
+    margin-top: 8px;
+}
+
+.line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 1px;
+    height: 70%;
+    background: #dadada;
+    content: "";
+}
