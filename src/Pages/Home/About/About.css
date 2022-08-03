@@ -26,7 +26,7 @@
     color: #666;
 }
 
-.about-content a {
+.about-content a, .single-service-box a {
     margin-top: 17px;
     color: #fc5185;
     font-size: 16px;
