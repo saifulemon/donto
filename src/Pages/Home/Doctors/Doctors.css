@@ -1,0 +1,85 @@
+.doctor-wrapper {
+    padding: 120px 0;
+}
+
+.sigle-doctor {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 8.135px 18.271px 40px 0 rgb(0 0 0 / 8%);
+    padding: 50px 56px;
+    margin-top: 30px;
+    transition: .4s;
+}
+
+.doctors-profile {
+    border-radius: 50%;
+    width: 217px;
+    height: 217px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.doctors-profile::before {
+    background: #fc5185;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    border-radius: 50%;
+    top: -1px;
+}
+
+.doctors-profile img {
+    position: absolute;
+    left: 54%;
+    bottom: -5px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+.doctors-info {
+    margin-top: 33px;
+}
+
+.doctors-info h3 {
+    line-height: 1;
+    transition: .3s;
+}
+
+.doctors-info h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.doctors-info h3 a:hover {
+    color: #fc5185;
+}
+
+.doctors-social {
+    border-top: 2px solid #dcdcdc7a;
+    padding-top: 15px;
+    margin-top: 14px;
+}
+
+.doctors-social a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #666;
+    color: #fff;
+    font-size: 13px;
+    line-height: 24px;
+    border-radius: 2px;
+    margin: 0 5px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.doctors-social a:hover {
+    background-color: #fc5185;
+}
