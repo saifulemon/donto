@@ -1,0 +1,13 @@
+.gallery-wrapper {
+    background-color: #004caa;
+    padding: 120px 0;
+}
+
+.single-item-box img {
+    border-radius: 12px;
+    height: 332px;
+    z-index: 1;
+    margin-top: 30px;
+    overflow: hidden;
+    min-width: 100%;
+}
