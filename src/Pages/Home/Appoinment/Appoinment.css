@@ -1,0 +1,39 @@
+.appoinment-wrapper {
+    padding-bottom: 120px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.appoinment-form form input, .appoinment-form form textarea {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 5.288px 11.876px 40px 0 rgb(0 0 0 / 5%);
+    height: 68px;
+    border: none;
+    line-height: 68px;
+    width: 100%;
+    color: #666;
+    font-size: 16px;
+    padding-left: 30px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+textarea {
+    min-height: 300px;
+    overflow: auto;
+    resize: vertical;
+}
+
+.form-btn {
+    width: 200px;
+}
+
+.form-btn:hover {
+    border: 1px solid #fc5185 !important;
+}
