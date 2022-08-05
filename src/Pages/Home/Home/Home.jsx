@@ -2,6 +2,7 @@ import React from 'react';
 import About from '../About/About';
 import Appoinment from '../Appoinment/Appoinment';
 import Banner from '../Banner/Banner';
+import Blog from '../Blog/Blog';
 import Doctors from '../Doctors/Doctors';
 import Features from '../Features/Features';
 import Gallery from '../Gallery/Gallery';
@@ -20,6 +21,7 @@ const Home = () => {
            <Appoinment />
            <Gallery />
            <Testimonial />
+           <Blog />
         </div>
     );
 };
