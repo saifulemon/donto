@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../About/About';
+import Promo from '../Appoinment-promo/Promo';
 import Appoinment from '../Appoinment/Appoinment';
 import Banner from '../Banner/Banner';
 import Blog from '../Blog/Blog';
@@ -22,6 +23,7 @@ const Home = () => {
            <Gallery />
            <Testimonial />
            <Blog />
+           <Promo />
         </div>
     );
 };

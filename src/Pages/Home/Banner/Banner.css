@@ -46,6 +46,7 @@
     border-radius: 3px;
     color: #fff;
     transition: .4s;
+    font-weight: 600;
 }
 
 .btn-fill {

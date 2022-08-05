@@ -1,0 +1,31 @@
+.promo-wrapper {
+    background: #004caa;
+}
+
+.promo-content h1 {
+    font-size: 36px;
+    line-height: 48px;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+.promo-banner {
+    margin-top: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.promo-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.promo-banner::before {
+    position: absolute;
+    left: -14px;
+    bottom: -6px;
+    background: url("../../../Images/promo-bg.png") !important;
+    content: "";
+    width: 636px;
+    height: 420px;
+    z-index: -1;
+}
