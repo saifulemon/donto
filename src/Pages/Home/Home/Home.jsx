@@ -8,6 +8,7 @@ import Doctors from '../Doctors/Doctors';
 import Features from '../Features/Features';
 import Gallery from '../Gallery/Gallery';
 import Services from '../Services/Services';
+import Slick from '../Slick/Slick';
 import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
            <Testimonial />
            <Blog />
            <Promo />
+           <Slick />
         </div>
     );
 };
