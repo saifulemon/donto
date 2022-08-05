@@ -6,6 +6,7 @@ import Doctors from '../Doctors/Doctors';
 import Features from '../Features/Features';
 import Gallery from '../Gallery/Gallery';
 import Services from '../Services/Services';
+import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
 
@@ -18,6 +19,7 @@ const Home = () => {
            <Doctors />
            <Appoinment />
            <Gallery />
+           <Testimonial />
         </div>
     );
 };
