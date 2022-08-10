@@ -2,7 +2,7 @@ export const FakeService = [
     {
         "id": "001",
         "title": "Complete Dentistry",
-        "description": "Lorem Ipsum is simply dummy text of the printings and type and setting for content",
+        "description": "Lorem Ipsum is simply is very dummy text of the printings and type and setting for content",
         "link": "Read More",
         "img": "https://raw.githubusercontent.com/saifulemon/images-for-all-project/main/Donto/Services/dentistry.svg"
     },
@@ -23,7 +23,7 @@ export const FakeService = [
     {
         "id": "004",
         "title": "Dental Implants",
-        "description": "Lorem Ipsum is simply dummy text of the printings and type and setting for content",
+        "description": "Lorem Ipsum is simply is very dummy text of the printings and type and setting for content",
         "link": "Read More",
         "img": "https://raw.githubusercontent.com/saifulemon/images-for-all-project/main/Donto/Services/implants.svg"
     },
