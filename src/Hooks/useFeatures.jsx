@@ -3,12 +3,15 @@ import { useEffect, useState } from 'react';
 const useFeatures = () => {
     const [features, setFeatures] = useState([]);
     useEffect(() => {
-        fetch("https://raw.githubusercontent.com/saifulemon/fake-data-all-project/master/Donto/features.json")
-            .then(res => res.json())
-            .then(data => setFeatures(data));
+        async function fetchData() {
+            await fetch('../FakeData/fakeFeatue.json')
+                .then(resp => resp.json())
+                .then(data => setFeatures(data.feat));
+        }
+        fetchData();
     }, []);
 
-    return [features, setFeatures];
+    return [features];
 };
 
 export default useFeatures;
