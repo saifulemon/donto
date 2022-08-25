@@ -14,7 +14,7 @@ import Testimonial from '../Testimonial/Testimonial';
 const Home = () => {
 
     return (
-        <div>
+        <>
            <Banner />
            <Feature />
            <About />
@@ -26,7 +26,7 @@ const Home = () => {
            <LatestBlog />
            <Promo />
            <Slick />
-        </div>
+        </>
     );
 };
 

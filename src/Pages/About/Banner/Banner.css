@@ -1,0 +1,75 @@
+.banner-all {
+    padding: 70px 0 50px 0;
+    background-color: #004caa;
+}
+
+.banner-animate {
+    position: relative;
+    z-index: 2;
+}
+
+.a2 {
+    position: absolute;
+    right: 45%;
+    bottom: 50px;
+    animation: movebounce 6s linear infinite;
+}
+
+.a3 {
+    position: absolute;
+    left: 24%;
+    bottom: -20px;
+    animation: movebounce 4s linear infinite;
+}
+
+.a4 {
+    position: absolute;
+    bottom: 100px;
+    right: 36%;
+    animation: movebounce 3s linear infinite;;
+}
+
+.a5 {
+    position: absolute;
+    top: 32px;
+    right: 38%;
+    bottom: 0;
+    z-index: -1;
+    animation: moveleftbounce 6s linear infinite;
+}
+
+.breadcrumb-nav a {
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-right: 15px;
+    position: relative;
+} 
+
+.breadcrumb-nav a:before {
+    position: absolute;
+    content: "";
+    right: -12px;
+    width: 4px;
+    height: 2px;
+    background: #fff;
+    top: 50%;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+
+@keyframes moveleftbounce {
+    0% {
+      transform: translateX(0px);
+    }
+  
+    50% {
+      transform: translateX(40px);
+    }
+  
+    100% {
+      transform: translateX(0px);
+    }
+  }
