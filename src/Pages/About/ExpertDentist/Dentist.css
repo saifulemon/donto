@@ -1,0 +1,18 @@
+.expert-dentist {
+    padding: 120px 0;
+}
+
+.expertDentist-txt h2 {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 23px;
+    color: #222;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+.expertDentist-txt p {
+    margin-bottom: 15px;
+    font-weight: 300;
+    color: #666;
+    font-family: "Roboto Slab",serif;
+}
