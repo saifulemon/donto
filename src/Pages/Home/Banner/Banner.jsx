@@ -1,10 +1,10 @@
+import "@fontsource/josefin-sans";
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import './Banner.css';
-import "@fontsource/josefin-sans";
-import womanbrush from '../../../Images/woman-brush.c4158ac5.png';
 import doctorfinding from '../../../Images/doctorfinding.c2532ac3.png';
 import heroTeeth from '../../../Images/hero-theeth.54c2c4e9.png';
+import womanbrush from '../../../Images/woman-brush.c4158ac5.png';
+import './Banner.css';
 
 const Banner = () => {
     return (

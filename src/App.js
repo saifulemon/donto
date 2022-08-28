@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About/About';
+import Approved from './Pages/Approved/Approved';
 import Contact from './Pages/Contact/Contact/Contact';
 import Dentist from './Pages/Dentist/Denitst/Dentist';
 import Footer from './Pages/Home/Footer/Footer.jsx';
@@ -20,6 +21,7 @@ function App() {
         <Route path='/service' element={<Service />} />
         <Route path='/dentist' element={<Dentist />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/approved' element={<Approved />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
