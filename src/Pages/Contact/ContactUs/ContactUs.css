@@ -1,0 +1,68 @@
+.contactUs-wrapper {
+    padding: 120px 0;
+}
+
+.single-contact {
+    min-height: 171px;
+    background: #fff;
+    box-shadow: 0 6px 26px rgb(0 0 0 / 6%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 35px;
+    transition: .5s;
+}
+
+.single-contact:hover {
+    transform: translateY(-10px);
+}
+
+.single-contact.icon1:hover .c-icon {
+    color: #fff;
+    background-color: #fc5185;
+}
+
+.single-contact.icon2 .c-icon {
+    color: #16D88A;
+    background: #DCF9EE;
+}
+
+.single-contact.icon2:hover .c-icon {
+    background: #16D88A;
+    color: #fff;
+}
+
+.single-contact.icon3 .c-icon {
+    color: #352E94;
+    background: #E1E0EF;
+}
+
+.single-contact.icon3:hover .c-icon {
+    background: #352E94;
+    color: #fff;
+}
+
+.c-icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background: #ffe7ea;
+    display: block;
+    border-radius: 50%;
+    color: #fc5185;
+    font-size: 26px;
+    transition: .5s;
+    margin-right: 60px;
+}
+
+.c-info h4 {
+    font-family: "Josefin Sans",sans-serif;
+}
+
+.c-info p {
+    margin: 0;
+    font-weight: 300;
+    line-height: 26px;
+    color: #999;
+}
