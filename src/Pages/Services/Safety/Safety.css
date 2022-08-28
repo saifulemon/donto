@@ -1,0 +1,41 @@
+.vedio-item {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.vedio-bg-img {
+    background-image: url("https://donto-react.netlify.app/static/media/video-bg1.0f728ac5.jpg");
+    background-color: #eee;
+    text-align: center;
+    height: 485px;
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    margin-bottom: 35px;
+}
+
+.vedio-play-btn {
+    height: 57px;
+    width: 57px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    line-height: 57px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    font-weight: 700;
+    color: #fc5185;
+    transition: .3s;
+}
+
+.vedio-item h5 {
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: #818181;
+}
+
+.img2 {
+    background-image: url("https://donto-react.netlify.app/static/media/video-bg2.1415f1d3.jpg") !important;
+}
