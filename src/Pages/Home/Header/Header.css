@@ -27,3 +27,11 @@
 .list-item:hover {
     color: #fc5185;
 }
+
+.ml-5 {
+    margin-left: 20px !important;
+}
+
+.ml-5:hover {
+    border-color: #fc5185 !important;
+}
