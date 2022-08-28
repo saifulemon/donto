@@ -1,0 +1,79 @@
+.dentist-details-sec {
+    padding: 120px 0;
+}
+
+.single-dentist-details h2 {
+    font-size: 36px;
+    line-height: 48px;
+    font-family: "Josefin Sans",sans-serif;
+    font-weight: 600;
+}
+
+.single-dentist-details h2 span {
+    font-size: 20px;
+    color: #666;
+    font-weight: 500;
+}
+
+.single-dentist-details p {
+    font-weight: 300;
+    font-size: 16px;
+    color: #666;
+    text-align: justify;
+}
+
+.dentist-award {
+    margin-top: 40px;
+}
+
+.dentist-award h3 {
+    margin-bottom: 7px;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "Josefin Sans",sans-serif;
+    color: black;
+}
+
+.dentist-award ul li {
+    position: relative;
+    display: inline-block;
+    padding-left: 16px;
+    margin-right: 25px;
+    margin-top: 14px;
+    list-style: none;
+}
+
+.dentist-award ul li::before {
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    background-color: #fc5185;
+    width: 9px;
+    height: 9px;
+    content: "";
+    top: 11px;
+}
+
+.profile-img {
+    background-image: url("https://donto-react.netlify.app/static/media/dentist-profile-img.47081b45.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 8.135px 18.271px 40px 0 rgb(0 0 0 / 8%);
+    height: 350px;
+    overflow: hidden;
+}
+
+.achivement-img-bg {
+    background-image: url("https://donto-react.netlify.app/static/media/achievement.f0b16c0c.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px 0 rgb(0 0 0 / 8%);
+    min-height: 405px;
+    overflow: hidden;
+}
