@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Appoinment.css';
 
 const Appoinment = () => {
@@ -28,7 +29,7 @@ const Appoinment = () => {
                                 <Col md={12} lg={12}>
                                     <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
                                 </Col>
-                                <button className="theme-btn btn-fill form-btn mt-5">Submit</button>
+                                <Link to="/login"><button className="theme-btn btn-fill form-btn mt-5">Submit</button></Link>
                             </form>
                         </div>
                     </Col>

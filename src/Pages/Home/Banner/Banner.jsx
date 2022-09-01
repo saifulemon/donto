@@ -1,6 +1,7 @@
 import "@fontsource/josefin-sans";
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import doctorfinding from '../../../Images/doctorfinding.c2532ac3.png';
 import heroTeeth from '../../../Images/hero-theeth.54c2c4e9.png';
 import womanbrush from '../../../Images/woman-brush.c4158ac5.png';
@@ -17,7 +18,7 @@ const Banner = () => {
                                 <h2>Better Life Through</h2>
                                 <h1>Better Dentistry</h1>
                                 <p>Join us to a fun and friendly dental environment. Our professionals are working so hard to see smile on your face that you deserve! We are dedicated about our duties.</p>
-                                <button className="theme-btn btn-fill">Appoinment</button>
+                                <Link to="/login"><button className="theme-btn btn-fill">Appoinment</button></Link>
                                 <button className='theme-btn bth-blank'>Learn More</button>
                             </div>
                         </Col>

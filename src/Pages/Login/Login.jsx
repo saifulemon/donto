@@ -1,9 +1,52 @@
-import React from 'react';
+import { faFacebook, faGithub, faGoogle, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+import useAuth from '../../Hooks/useAuth';
 import './Login.css';
 
 
 const Login = () => {
+    const navigate = useNavigate();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const { handleFacebookSignIN, signInWithGithub } = useAuth();
 
+    const auth = getAuth();
+    const googleProvider = new GoogleAuthProvider();
+    // const githubProvider = new GithubAuthProvider();
+
+    const singnInWithGoogleHeander = () => {
+        signInWithPopup(auth, googleProvider)
+        .then(result => {
+            // setUser(result.user);
+            console.log(result.user);
+            navigate('/approved')
+        })
+        .catch(error => {
+            // setError(error.message);
+            console.log(error)
+        })
+    }
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        createUserWithEmailAndPassword(auth, email, password)
+        .then(resutlt => {
+            const user = resutlt.user
+            console.log(user);
+        })
+        navigate("/approved");
+    }
+
+    const handleEmailChange = e => {
+        setEmail(e.target.value)
+    }
+
+    const handlePasswordChange = e => {
+        setPassword(e.target.value)
+    }
     return (
         <>
             <section className="h-100 gradient-form pb-5">
@@ -19,18 +62,18 @@ const Login = () => {
                                                 <h4 className="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
                                             </div>
                                             <p className="d-flex justify-content-start">Please login to your account</p>
-                                            <form>
+                                            <form onSubmit={handleSubmit}>
                                                 <div className="form-outline mb-4">
-                                                    <input type="email" id="form2Example11" className="form-control"
-                                                        placeholder="Phone number or email address" />
+                                                    <input onBlur={handleEmailChange} type="email" id="form2Example11" className="form-control"
+                                                        placeholder="Email Address" required />
                                                 </div>
 
                                                 <div className="form-outline mb-4">
-                                                    <input type="password" id="form2Example22" placeholder="Password" className="form-control" />
+                                                    <input onBlur={handlePasswordChange} type="password" id="form2Example22" placeholder="Password" className="form-control" required />
                                                 </div>
 
                                                 <div className="text-center pt-1 mb-5 pb-1">
-                                                    <button className="theme-btn btn-fill" type="button">Log
+                                                    <button className="theme-btn btn-fill" type="submit">Log
                                                         in</button>
                                                     <a className="text-muted text-decoration-none" href="#!">Forgot password?</a>
                                                 </div>
@@ -57,21 +100,12 @@ const Login = () => {
                                     <div className="col-12">
                                         <div className="text-center">
                                             <h4>or sign up with:</h4>
-                                            <button type="button" className="btn btn-link btn-floating mx-1 text-decoration-none">
-                                                <i className="ri-facebook-circle-fill"></i>
-                                            </button>
-
-                                            <button type="button" className="btn btn-link btn-floating mx-1 text-decoration-none">
-                                                <i className="ri-google-fill"></i>
-                                            </button>
-
-                                            <button type="button" className="btn btn-link btn-floating mx-1 text-decoration-none">
-                                                <i className="ri-twitter-fill"></i>
-                                            </button>
-
-                                            <button type="button" className="btn btn-link btn-floating mx-1 text-decoration-none">
-                                                <i className="ri-github-fill"></i>
-                                            </button>
+                                            <div className="doctors-social">
+                                                <button className="loginbtn" onClick={singnInWithGoogleHeander}><FontAwesomeIcon icon={faGoogle} /></button>
+                                                <button className="loginbtn" onClick={signInWithGithub}><FontAwesomeIcon icon={faGithub} /></button>
+                                                <button className="loginbtn" onClick={handleFacebookSignIN}><FontAwesomeIcon icon={faFacebook} /></button>
+                                                <button className="loginbtn"><FontAwesomeIcon icon={faTwitter} /></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

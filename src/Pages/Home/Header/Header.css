@@ -35,3 +35,50 @@
 .ml-5:hover {
     border-color: #fc5185 !important;
 }
+
+.userName {
+    color: #004caa;
+    margin-left: 5px;
+}
+
+.btn {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.btn-danger {
+    font-family: Raleway-SemiBold;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fc5185 ;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid #fc5185 ;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .btn-danger:hover {
+    color: #FFF;
+    background: #fc5185 ;
+    border: 2px solid #fc5185 ;
+  }
+
+
+
+  /* for mobile responsive */
+
+@media (max-width: 992px) {
+    /* 2: Navbar */
+    .btn {
+        margin-left: 57px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1070px) {
+    /* 2: Navbar */
+    
+}

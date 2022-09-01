@@ -1,3 +1,5 @@
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -13,7 +15,7 @@ const Header = () => {
         <div className="head-bg">
             <Navbar className="navbar" collapseOnSelect expand="lg">
                 <Container className="container-head">
-                    <Navbar.Brand href="#home"><img src={logo} alt="logo" /></Navbar.Brand>
+                    <Navbar.Brand href="/home"><img src={logo} alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" expand="lg"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto align-items-center">
@@ -24,11 +26,13 @@ const Header = () => {
                             <Link to="/contact" className='list-item text-decoration-none'>Contact</Link>
                             {user.email 
                             ?
-                            <button className="theme-btn btn-fill ml-5 rounded-pill">Log Out</button>
+                            <button type="button" className="btn btn-danger" onClick={logout}>Log Out</button>
                             :
-                            <Link to="/login" className='list-item text-decoration-none theme-btn btn-fill ml-5 rounded-pill'>Login</Link>
+                            <Link to="/login" type="button" className="btn btn-danger">Login</Link>
                             }
-                            <Navbar.Text><span>{user.displayName}</span></Navbar.Text>
+                            {user.email &&
+                                <Navbar.Text><FontAwesomeIcon icon={faUser} /><span className="userName">{user.displayName}</span></Navbar.Text>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
