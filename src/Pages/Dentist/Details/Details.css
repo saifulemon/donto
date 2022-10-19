@@ -77,3 +77,23 @@
     min-height: 405px;
     overflow: hidden;
 }
+
+
+/* for mobile responsive */
+@media only screen and (max-width: 426px){
+    .achivement-img-bg {
+        min-height: 225px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .achivement-img-bg {
+        min-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .achivement-img-bg {
+        min-height: 175px;
+    }
+}

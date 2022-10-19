@@ -83,3 +83,10 @@
 .doctors-social a:hover, .loginbtn:hover {
     background-color: #fc5185;
 }
+
+
+@media only screen and (max-width: 426px){
+    .mb-sm-dent {
+        margin-bottom: 0 !important;
+    }
+}

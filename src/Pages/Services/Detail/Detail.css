@@ -1,0 +1,14 @@
+/* for mobile responsive */
+@media only screen and (max-width: 426px){
+    .healing {
+        padding: 0 !important;
+    }
+
+    .p-5 {
+        padding: 6px !important;
+    }
+
+    .pt-xs-5 {
+        padding-top: 40px;
+    }
+}

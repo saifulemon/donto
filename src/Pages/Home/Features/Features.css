@@ -39,3 +39,11 @@
     color: #666;
     font-family: 'Roboto Slab', serif;
 }
+
+
+/* for mobile responsive */
+@media only screen and (max-width: 426px){
+    .feature-wrapper {
+        padding: 50px 0;
+    }
+}

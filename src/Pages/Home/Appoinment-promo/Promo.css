@@ -29,3 +29,11 @@
     height: 420px;
     z-index: -1;
 }
+
+
+/* for mobile responsive */
+@media only screen and (max-width: 426px){
+    .mt-sm-req {
+        margin-top: 3rem;
+    }
+}

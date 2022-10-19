@@ -90,3 +90,18 @@
     background: #dadada;
     content: "";
 }
+
+/* for mobile responsive */
+@media only screen and (max-width: 426px){
+    .about-wrapper {
+        margin: 60px 0 50px 0;
+    }
+
+    .about-left {
+        margin-bottom: 40px;
+    }
+
+    .dontoAnim {
+        max-width: 40%;
+    }
+}

@@ -40,3 +40,30 @@
     line-height: 30px;
     display: inline-block;
 }
+
+
+/* for mobile responsive */
+@media only screen and (max-width: 426px){
+    .achivement-txt p {
+        width: 100% !important;
+    }
+
+    .more-tool {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .theme-btn {
+        line-height: 0 !important;
+        padding: 0 20px !important;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .watchBtn {
+        padding: 0 0px !important;
+        font-size: 12px;
+    }
+}

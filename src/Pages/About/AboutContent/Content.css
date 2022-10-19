@@ -7,3 +7,16 @@
     line-height: 1.5;
     font-size: 16px;
 }
+
+
+/* for mobile responsive */
+@media only screen and (max-width: 426px){
+    .content-inner {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .about-content-sec {
+        padding: 70px 0;
+    }
+}

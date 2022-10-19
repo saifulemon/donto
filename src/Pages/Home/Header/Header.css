@@ -76,9 +76,19 @@
         margin-right: 15px;
         margin-bottom: 20px;
     }
+
+    .container-head {
+        max-width: 80%;
+    }
 }
 
-@media (max-width: 1070px) {
-    /* 2: Navbar */
-    
+
+@media (max-width: 426px) {
+    .list-item {
+        padding: 15px 0;
+    }
+
+    .btn {
+        margin: 15px auto;
+    }
 }

@@ -38,3 +38,17 @@
 .developer {
     color: #fc5185;
 }
+
+
+/* for mobile responsive */
+@media only screen and (max-width: 426px){
+    .single-footer-widget {
+        padding: 45px 0 20px;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .footer-copy-right {
+        padding: 20px 8px;
+    }
+}

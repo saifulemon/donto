@@ -14,7 +14,8 @@ import Service from './Pages/Services/Service/Service';
 
 function App() {
   return (
-    <AuthProvider>
+    <div className="App">
+      <AuthProvider>
       <Router>
         <Header />
         <Routes>
@@ -31,6 +32,7 @@ function App() {
         <Footer />
       </Router>
     </AuthProvider>
+    </div>
   );
 }
 
